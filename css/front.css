@@ -1,0 +1,402 @@
+.txsy_style {
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+    color: #7a7a7a;
+    letter-spacing: normal;
+}
+.txsy_style .txsy_form {
+    background: #fafafa;
+    box-shadow: 0 2px 3px hsla(0,0%,4%,.1), 0 0 0 1px hsla(0,0%,4%,.1);
+    padding: 20px;
+    margin: 16px auto;
+    border-radius: 6px;
+
+    max-width: calc(100% - 32px);
+    /*
+    max-width: 450px;
+    */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.txsy_style p {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.txsy_style button {
+    text-decoration: none;
+}
+
+.txsy_style .txsy_flex {
+    margin-bottom: 16px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 620px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+    --multiplier: calc(620px - 100%);
+}
+.txsy_style .txsy_flex > * {
+    /*
+    flex-basis: 100%;
+    flex-basis: 33%;
+    flex-basis: -999px;
+    flex-grow: 1;
+    margin: 0;
+    */
+
+    flex-basis: calc(var(--multiplier) * 999);
+    flex-grow: 1;
+    margin: 4px;
+
+    /*
+    min-width: calc(33% - (8px * 2));
+    max-width: 100%;
+    flex-grow: 1;
+    flex-basis: -999px;
+    margin: 8px;
+    */
+}
+
+.txsy_style .txsy_flex label {
+    font-weight: 700;
+    display: block;
+    text-align: right;
+}
+.txsy.txsy_small .txsy_flex label {
+    text-align: left;
+}
+
+.txsy_style input[type=text] {
+    text-align: left;
+    display: block;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+    color: #363636;
+    width: 100%;
+    width: auto;
+    padding: 10px;
+    line-height: 24px;
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.txsy_style input[type=text]:focus {
+    border-color: #3273dc;
+    box-shadow: 0 0 0 0.125em rgba(50,115,220,.25);
+    outline: none;
+}
+
+.txsy_style .txsy_submit button {
+    text-align: left;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    color: #7a7a7a;
+    font-size: 20px;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 6px 15px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: none;
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.txsy_style .txsy_submit button:focus {
+    outline: none;
+}
+.txsy_style .txsy_submit .dashicons {
+    vertical-align: top;
+    color: #33a1de;
+    font-size: 32px;
+    margin-right: 6px;
+}
+.txsy_style .txsy_submit button .dashicons-update {
+    display: none;
+    animation: txsy_spin 1s infinite;
+    animation-timing-function: linear;
+    transform-origin: 79% 79%;
+    color: #7a7a7a;
+}
+.txsy_style .txsy_submit button[disabled] .dashicons {
+    display: none;
+}
+.txsy_style .txsy_submit button[disabled] .dashicons-update {
+    display: inline-block;
+}
+
+.txsy_style .txsy_src {
+    margin-bottom: 0;
+}
+.txsy_style .txsy_src a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #7a7a7a !important;
+}
+.txsy_style .txsy_src a:hover {
+    font-size: 13px;
+    text-decoration: none;
+    color: #7a7a7a !important;
+}
+.txsy_style .txsy_src img {
+    display: inline-block;
+    width: 128px;
+    vertical-align: middle;
+    margin-left: 8px;
+
+    width: 80px;
+    margin-left: 3px;
+}
+
+.txsy_style.txsy_popup_cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000033;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+.txsy_style.txsy_popup_cover.txsy_show {
+    display: flex;
+}
+
+.txsy_style .txsy_popup {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    padding: 32px;
+    border-radius: 6px;
+}
+
+.txsy_style .txsy_popup form {
+    margin-bottom: 32px;
+}
+
+.txsy_style .txsy_popup .txsy_flex {
+    max-width: 420px;
+}
+.txsy_style .txsy_popup .txsy_flex label {
+    text-align: left;
+}
+
+.txsy_style .txsy_popup_close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7a7a7a;
+    background: #f5f5f5;
+}
+.txsy_style .txsy_popup_close .dashicons {
+    vertical-align: top;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+}
+.txsy_style .txsy_popup_close:hover {
+    border: 1px solid transparent;
+    color: #7a7a7a;
+    background: #f5f5f5;
+}
+.txsy_style .txsy_popup_close:focus {
+    outline: none;
+}
+
+
+.txsy_style .txsy_do_not_show {
+    text-align: left;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    color: #7a7a7a;
+    font-size: 20px;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 6px 15px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: none;
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.txsy_style .txsy_do_not_show {
+    outline: none;
+}
+.txsy_style .txsy_do_not_show .dashicons {
+    vertical-align: top;
+    color: #33a1de;
+    font-size: 32px;
+    margin-right: 6px;
+}
+
+.txsy_style.txsy_chat {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+    text-align: left;
+}
+.txsy_style.txsy_chat.txsy_left {
+    right: auto;
+    left: 24px;
+}
+
+.txsy_style.txsy_chat .txsy_chat_popup {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    background: #007aff;
+    color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px hsla(0,0%,4%,.1), 0 0 0 1px hsla(0,0%,4%,.1);
+    box-sizing: border-box;
+    width: 300px;
+}
+.txsy_style.txsy_chat.txsy_left .txsy_chat_popup {
+    right: auto;
+    left: 0;
+}
+.txsy_style.txsy_chat.txsy_show .txsy_chat_popup {
+    display: block;
+}
+
+.txsy_style.txsy_chat .txsy_chat_popup header {
+    padding: 12px 24px;
+}
+
+.txsy_style.txsy_chat .txsy_chat_popup .txsy_chat_form {
+    margin: 0;
+    padding: 0;
+    padding: 12px 24px;
+    background: #fff;
+    color: #6d6d6d;
+    border-radius: 6px;
+}
+.txsy_style.txsy_chat .txsy_chat_popup form label {
+    display: block;
+    margin-bottom: 4px;
+}
+.txsy_style.txsy_chat .txsy_chat_popup form input {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.txsy_style .txsy_chat_open {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 0;
+    padding: 0;
+    background: #007aff;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px hsla(0,0%,4%,.1), 0 0 0 1px hsla(0,0%,4%,.1);
+}
+.txsy_style.txsy_chat.txsy_left .txsy_chat_open {
+    right: auto;
+    left: 0;
+}
+.txsy_style .txsy_chat_open .dashicons {
+    vertical-align: top;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+}
+.txsy_style .txsy_chat_open:hover {
+    background: #007aff;
+    border: 1px solid transparent;
+    color: #ffffff;
+    opacity: 0.8;
+}
+.txsy_style .txsy_chat_open:focus {
+    outline: none;
+}
+
+.txsy_style.txsy_chat .txsy_chat_close {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background: #007aff;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid transparent;
+    color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px hsla(0,0%,4%,.1), 0 0 0 1px hsla(0,0%,4%,.1);
+}
+.txsy_style.txsy_chat.txsy_left .txsy_chat_close {
+    right: auto;
+    left: 0;
+}
+.txsy_style .txsy_chat_close .dashicons {
+    vertical-align: top;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+}
+.txsy_style .txsy_chat_close:hover {
+    background: #007aff;
+    border: 1px solid transparent;
+    color: #ffffff;
+    opacity: 0.8;
+}
+.txsy_style .txsy_chat_close:focus {
+    outline: none;
+}
+
+.txsy_style.txsy_chat.txsy_show .txsy_chat_close {
+    display: flex;
+}
+.txsy_style.txsy_chat.txsy_show .txsy_chat_open {
+    display: none;
+}
+
+.txsy_style.txsy_chat .txsy_flex label {
+    text-align: left;
+}
+
+.txsy_style.txsy_chat .txsy_src {
+    text-align: center;
+}
+
+@keyframes txsy_spin {
+  0% {
+      transform: rotate( 0deg );
+  }
+  100% {
+      transform: rotate( 360deg );
+  }
+}
+

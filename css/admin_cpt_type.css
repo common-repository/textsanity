@@ -1,0 +1,21 @@
+#txsy_widget_details {
+    visibility: hidden;
+}
+
+#txsy_widget_details td:nth-child(2) {
+    width: 75%;
+}
+
+#txsy_widget_details .form-table input[type=text] {
+	width: 100%;
+	max-width: 500px;
+	margin-bottom: 6px;
+}
+
+#txsy_widget_details .form-table textarea {
+	width: 100%;
+	max-width: 500px;
+	height: 50px;
+	margin-bottom: 6px;
+}
+
